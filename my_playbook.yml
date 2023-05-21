@@ -1,0 +1,6 @@
+---
+- name: Apply my_role
+  hosts: localhost
+  roles:
+    - my_role
+

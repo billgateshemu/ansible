@@ -1,0 +1,10 @@
+---
+- name: Check installed roles
+  hosts: localhost
+  gather_facts: true
+
+  tasks:
+    - name: display installed roles
+      debug:
+        msg: "{{ ansible_facts['ansible_roles'] }}"
+
